@@ -17,6 +17,9 @@ $( document ).ready(function() {
 /*
  * Coordinate getting the feed information, fetching the datastreams, displaying the graph.
  */
+ 
+ var key= 'ZKPRcyV1nMJUMlifIlWG9nWxcsO95Hy8hdCM96BSg92cmHGr'; // Unique master Xively API key to be used as a default
+	var	feed	= [2071969001]; // Comma separated array of Xively Feed ID numbers
 function addNewGraph(key, feed, element) {
   var start = moment().subtract('days', 3);
   var end = moment();
